@@ -27,6 +27,9 @@
     <ClInclude Include="Managers\UnitManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Managers\BuildingManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BotModule.cpp">
@@ -42,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Managers\UnitManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers\BuildingManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

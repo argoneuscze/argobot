@@ -18,6 +18,12 @@ void WorkerManager::onStart()
 	redistributeWorkers();
 }
 
+void WorkerManager::onUnitComplete(Unit unit)
+{
+	if (unit->getType().isWorker())
+		assignWorker(unit);
+}
+
 void WorkerManager::redistributeWorkers() const
 {
 	for (auto& worker : unitManager.getIdleWorkers())

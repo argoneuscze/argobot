@@ -16,6 +16,12 @@ void UnitManager::onStart()
 	}
 }
 
+void UnitManager::onUnitComplete(Unit unit)
+{
+	if (unit->getType().isWorker())
+		workers.push_back(unit);
+}
+
 const std::vector<Unit>& UnitManager::getAllWorkers() const
 {
 	return workers;

@@ -13,6 +13,7 @@ void BotModule::onStart()
 {
 	unitManager.onStart();
 	workerManager.onStart();
+	buildingManager.onStart();
 }
 
 void BotModule::onEnd(bool isWinner)
@@ -21,6 +22,7 @@ void BotModule::onEnd(bool isWinner)
 
 void BotModule::onFrame()
 {
+	buildingManager.onFrame();
 }
 
 void BotModule::onSendText(std::string text)
@@ -77,5 +79,6 @@ void BotModule::onSaveGame(std::string gameName)
 
 void BotModule::onUnitComplete(BWAPI::Unit unit)
 {
+	workerManager.onUnitComplete(unit);
 }
 

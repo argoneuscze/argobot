@@ -135,6 +135,7 @@
     <ClInclude Include="Managers\Manager.h" />
     <ClInclude Include="Managers\WorkerManager.h" />
     <ClInclude Include="Managers\UnitManager.h" />
+    <ClInclude Include="Managers\BuildingManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BotModule.cpp" />
@@ -142,6 +143,7 @@
     <ClCompile Include="Managers\Manager.cpp" />
     <ClCompile Include="Managers\WorkerManager.cpp" />
     <ClCompile Include="Managers\UnitManager.cpp" />
+    <ClCompile Include="Managers\BuildingManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,12 +4,14 @@
 #include <memory>
 #include "Managers/WorkerManager.h"
 #include "Managers/UnitManager.h"
+#include "Managers/BuildingManager.h"
 
 class BotModule: public BWAPI::AIModule
 {
 private:
 	UnitManager unitManager;
 	WorkerManager workerManager;
+	BuildingManager buildingManager;
 public:
 	BotModule();
 	~BotModule() override;

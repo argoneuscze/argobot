@@ -12,6 +12,7 @@ public:
 	explicit WorkerManager(UnitManager& unitManager);
 
 	void onStart() override;
+	void onUnitComplete(BWAPI::Unit unit) override;
 
 	void redistributeWorkers() const;
 	void assignWorker(const BWAPI::Unit& worker) const;
