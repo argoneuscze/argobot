@@ -5,6 +5,7 @@
 #include <BWAPI/Unitset.h>
 #include <BWAPI/Unit.h>
 #include "UnitManager.h"
+#include "../Util/Util.cpp"
 
 using namespace BWAPI;
 
@@ -26,10 +27,14 @@ void WorkerManager::onUnitComplete(Unit unit)
 
 void WorkerManager::redistributeWorkers() const
 {
-	for (auto& worker : unitManager.getIdleWorkers())
-	{
-		assignWorker(worker);
-	}
+	auto workers = unitManager.getAllWorkers();
+	forEachIf(workers.begin(), workers.end(), [](Unit& u)
+	          {
+		          return u->isIdle();
+	          }, [this](Unit& u)
+	          {
+		          assignWorker(u);
+	          });
 }
 
 void WorkerManager::assignWorker(const Unit& worker) const
