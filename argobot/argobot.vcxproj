@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Hry\Starcraft Brood War\BWAPI 4.1.2 src\Release_Binary\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Hry\Starcraft Brood War\BWAPI 4.1.2 src\Release_Binary\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>D:\Hry\Starcraft Brood War\BWAPI 4.1.2 src\Release_Binary\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Hry\Starcraft Brood War\BWAPI 4.1.2 src\Release_Binary\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
