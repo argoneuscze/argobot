@@ -79,6 +79,7 @@ void BotModule::onSaveGame(std::string gameName)
 
 void BotModule::onUnitComplete(BWAPI::Unit unit)
 {
+	unitManager.onUnitComplete(unit);
 	workerManager.onUnitComplete(unit);
 }
 
