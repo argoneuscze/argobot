@@ -23,7 +23,8 @@ void BuildingManager::onFrame()
 
 	for (auto& wb : workerBuildings)
 	{
-		if (minerals >= workerType.mineralPrice() && wb->isIdle()) {
+		if (minerals >= workerType.mineralPrice() && wb->isIdle())
+		{
 			wb->train(workerType);
 			minerals -= workerType.mineralPrice();
 		}

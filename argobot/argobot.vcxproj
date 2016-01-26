@@ -144,6 +144,7 @@
     <ClCompile Include="Managers\WorkerManager.cpp" />
     <ClCompile Include="Managers\UnitManager.cpp" />
     <ClCompile Include="Managers\BuildingManager.cpp" />
+    <ClCompile Include="Util\Util.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

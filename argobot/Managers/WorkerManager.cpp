@@ -28,7 +28,7 @@ void WorkerManager::redistributeWorkers() const
 {
 	for (auto& worker : unitManager.getIdleWorkers())
 	{
-		assignWorker(worker.get());
+		assignWorker(worker);
 	}
 }
 

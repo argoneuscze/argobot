@@ -3,6 +3,7 @@
 #include <BWAPI/Game.h>
 #include <BWAPI/Player.h>
 #include <BWAPI/Unitset.h>
+#include "../Util/Util.cpp"
 
 using namespace BWAPI;
 
@@ -27,11 +28,11 @@ const std::vector<Unit>& UnitManager::getAllWorkers() const
 	return workers;
 }
 
-UnitManager::unitRefs UnitManager::getIdleWorkers()
+std::vector<Unit> UnitManager::getIdleWorkers()
 {
-	return getUnitRefs(workers.begin(), workers.end(), [](Unit& unit)
-	                   {
-		                   return unit->isIdle();
-	                   });
+	return getSubset(workers.begin(), workers.end(), [](Unit& unit)
+	                 {
+		                 return unit->isIdle();
+	                 });
 }
 
