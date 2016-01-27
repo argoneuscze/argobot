@@ -11,7 +11,7 @@ private:
 public:
 	explicit WorkerManager(UnitManager& unitManager);
 
-	void onStart() override;
+	void onFrame() override;
 	void onUnitComplete(BWAPI::Unit unit) override;
 
 	void redistributeWorkers() const;

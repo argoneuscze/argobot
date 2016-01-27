@@ -6,13 +6,10 @@
 
 using namespace BWAPI;
 
-void BuildingManager::onStart()
+void BuildingManager::onUnitComplete(BWAPI::Unit unit)
 {
-	for (auto& unit : Broodwar->self()->getUnits())
-	{
-		if (unit->getType().isResourceDepot())
-			workerBuildings.push_back(unit);
-	}
+	if (unit->getType().isResourceDepot())
+		workerBuildings.push_back(unit);
 }
 
 void BuildingManager::onFrame()

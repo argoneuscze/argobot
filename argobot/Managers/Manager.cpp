@@ -6,7 +6,7 @@ Manager::~Manager()
 {
 }
 
-void Manager::onFrame()
+void Manager::onStart()
 {
 }
 

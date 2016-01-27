@@ -14,9 +14,8 @@ WorkerManager::WorkerManager(UnitManager& unitManager)
 {
 }
 
-void WorkerManager::onStart()
+void WorkerManager::onFrame()
 {
-	redistributeWorkers();
 }
 
 void WorkerManager::onUnitComplete(Unit unit)

@@ -8,13 +8,8 @@
 using namespace BWAPI;
 
 
-void UnitManager::onStart()
+void UnitManager::onFrame()
 {
-	for (auto& unit : Broodwar->self()->getUnits())
-	{
-		if (unit->getType().isWorker())
-			workers.push_back(unit);
-	}
 }
 
 void UnitManager::onUnitComplete(Unit unit)

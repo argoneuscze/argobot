@@ -9,7 +9,7 @@ private:
 	std::vector<BWAPI::Unit> workerBuildings;
 
 public:
-	void onStart() override;
 	void onFrame() override;
+	void onUnitComplete(BWAPI::Unit unit) override;
 };
 

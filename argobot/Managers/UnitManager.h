@@ -10,7 +10,7 @@ private:
 	std::vector<BWAPI::Unit> workers;
 
 public:
-	void onStart() override;
+	void onFrame() override;
 	void onUnitComplete(BWAPI::Unit unit) override;
 
 	const std::vector<BWAPI::Unit>& getAllWorkers() const;

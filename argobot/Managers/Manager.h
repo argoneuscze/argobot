@@ -5,8 +5,8 @@ class Manager
 {
 public:
 	virtual ~Manager();
-	virtual void onStart() = 0;
-	virtual void onFrame();
+	virtual void onStart();
+	virtual void onFrame() = 0;
 	virtual void onUnitComplete(BWAPI::Unit unit);
 };
 
